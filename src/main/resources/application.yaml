@@ -6,11 +6,16 @@ spring:
     name: micro2
   data:
     mongodb:
-      uri: ${MONGO_URL}
-      database: ${MONGO_DB}
+      uri: mongodb+srv://administrador:Sencilla2016@cluster0.ynyfcec.mongodb.net/meseroapp
+      database: meseroapp
 
 cloudinary:
-  cloud_name: ${CLOUDINARY_CLOUDNAME}
-  api_key : ${CLOUDINARY_APIKEY}
-  api_secret : ${CLOUDINARY_APISECRET}
-  secure : ${CLOUDINARY_SECURE}
+  cloud_name: jiliar-antonio-silgado-cardona
+  api_key : 683867121112246
+  api_secret : FepAFQe9AEaShWNhiEOufUQU6sI
+  secure : true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
